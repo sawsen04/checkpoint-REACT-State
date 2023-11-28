@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/1021/487/HD-wallpaper-technology-code-programming-programmer.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart {
+ /* border: 1px rgb(255, 255, 255) solid;*/
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 220px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+ /* border: 1px rgb(177, 9, 9) solid;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 680px;
+}
+.cart h1,
+h2,
+p {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cart h1 {
+  text-shadow: 10px 0px 0px rgb(75, 107, 12);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.counter {
+  border: 5px white solid;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  color: white;
+  
+}
+.image img {
+  border: 2px white solid;
+  border-radius: 80px;
+  box-shadow: 10px 10px 40px white;
+  -webkit-animation: rotate-center 10s ease-in-out both;
+  animation: rotate-center 10s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
-  to {
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.btn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
